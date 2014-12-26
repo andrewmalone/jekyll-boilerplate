@@ -1,0 +1,17 @@
+# Site settings
+title: "The River's Bend Sessions"
+email: ""
+description: ""
+baseurl: ""
+url: "http://riversbendsessions.com"
+
+# Build settings
+markdown: kramdown
+markdown_ext: "markdown,md"
+permalink: /:year/:month/:day/:title/
+exclude: [
+    'node_modules',
+    'package.json',
+    'Gruntfile.js',
+    'readme.md'
+] 
