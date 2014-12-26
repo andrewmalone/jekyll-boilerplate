@@ -8,7 +8,7 @@ module.exports = {
 		// Properties should be known (listed in CSS3 specification) or be a vendor-prefixed property.
 		"known-properties": 2,
 		// The box-sizing properties isn't supported in IE6 and IE7.
-		"box-sizing": 2,
+		"box-sizing": false,
 		// Don't use width or height when using padding or border.
 		"box-model": 2,
 		// Don't use classes or IDs with elements (a.foo or a#foo).
@@ -65,7 +65,7 @@ module.exports = {
 		// Headings should be defined only once.
 		"unique-headings": 2,
 		// The universal selector (*) is known to be slow.
-		"universal-selector": 2,
+		"universal-selector": false,
 		// Unqualified attribute selectors are known to be slow.
 		"unqualified-attributes": 2,
 		// When using a vendor-prefixed property, make sure to include the standard one.
