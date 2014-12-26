@@ -6,5 +6,4 @@ js/*.js
 js/_build/
 .sass-cache/
 validation-report.json
-
 validation-status.json
