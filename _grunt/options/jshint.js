@@ -1,3 +1,3 @@
 module.exports = {
-// 	beforeconcat: ['christmas/*.js']
+ 	beforeconcat: ['js/_dev/*.js']
 }
