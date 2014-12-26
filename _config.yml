@@ -13,5 +13,7 @@ exclude: [
     'node_modules',
     'package.json',
     'Gruntfile.js',
-    'readme.md'
+    'readme.md',
+    'validation-report.json',
+    'validation-status.json'
 ] 
