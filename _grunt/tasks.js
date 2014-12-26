@@ -1,12 +1,12 @@
 module.exports = function(grunt) {
-	//grunt.registerTask('default', ['sass', 'autoprefixer', 'jshint', 'shell:jekyllBuild', 'connect', 'watch']);
-	//grunt.registerTask('publish', ['sass', 'autoprefixer', 'shell:jekyllPublish']);
+	
+	// build css
+	grunt.registerTask('css', ['sass', 'autoprefixer']);
 	
 	// add sass, autoprefix, concat, etc. to this tasks
-	grunt.registerTask('build', ['sass', 'autoprefixer', 'shell:jekyllPublish']);
+	grunt.registerTask('build', ['css', 'shell:jekyllPublish']);
 	
-	// add linting to this task
-	grunt.registerTask('build-dev', ['build']);
+	grunt.registerTask('build-dev', ['css', 'csslint', 'shell:jekyllPublish']);
 	
 	grunt.registerTask('dev', ['build-dev', 'connect', 'watch']);
 };
